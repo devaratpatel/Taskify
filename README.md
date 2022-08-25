@@ -1,3 +1,3 @@
 # Taskify
 
-Smart Taskboard Managing Application using React and TypeScript
+Smart Task Management Application using React and TypeScript
