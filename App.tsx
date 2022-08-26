@@ -9,9 +9,14 @@ const App: React.FC = () => {
 
   const handleAdd = (event: React.FormEvent) => {
     event.preventDefault();
+
+    if (todo) {
+      setTodos([...todos, { id: Date.now(), todo, isDone: false }]);
+      setTodo('');
+    }
   };
 
-  console.log(todo);
+  console.log(todos);
   return (
     <div className='App'>
       <span className='heading'>Taskify</span>
